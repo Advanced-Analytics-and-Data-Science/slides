@@ -20,8 +20,6 @@
   --green-faint: #8fada750;
   --light-blue-faint: #A7D5E850;
   --pink-faint: #E9AFA350;
-  --red:#D0313C;
-  --red-faint:#e3c1c3;
 }
 
 /* Font colors */
@@ -43,9 +41,6 @@
 .yellow {
   color: var(--yellow);
 }
-.red {
-  color: var(--red);
-}
 
 
 /* Title slide customization */
@@ -53,25 +48,19 @@
   text-align: left;
   font-weight: bold;
   font-family: Raleway;
-  color: var(--red);
 }
 
 .title-slide h2 {
-  color: var(--red);
-  font-size: 100%;
+  color: var(--green);
 }
 
 .title-slide h3 {
-  color: var(--red);
-  font-size: 100%;
+  color: var(--beige);
+  font-size: 130%;
 }
 
 .title-slide a {
   color: var(--gray);
-}
-
-.title-slide {
-background-color: #fff;
 }
 
 /* Alignment */
@@ -86,11 +75,10 @@ background-color: #fff;
 /* To make the most of the slide real estate */
 
 h1, h2, h3 {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   margin-right: 5px;
   margin-left: 5px;
-  color: var(--red);
 }
 
 /* Font sizes */
@@ -117,7 +105,7 @@ h1, h2, h3 {
  font-family: 'Montserrat', sans-serif;
  font-size: 1700%;
  font-weight: bold;
- color: var(--red);
+ color: var(--light-blue);
 }
 .huge-pink-number {
  font-family: 'Montserrat', sans-serif;
@@ -162,7 +150,7 @@ h1, h2, h3 {
 
 /* Footnote */
 .footnote {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 
@@ -173,7 +161,7 @@ ul{
 }
 
 /* Footer */
-/* div.my-footer {
+div.my-footer {
     border-top: 1px solid var(--gray);
     position: absolute;
     bottom: 0px;
@@ -191,7 +179,7 @@ div.my-footer a {
     font-size: 20px;
     color: #8A8A8A;
 }
-/* 
+
 
 /* Custom boxes */
 
@@ -202,23 +190,21 @@ div.my-footer a {
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
+  color: white;
 }
 
 .question{
-  border-left: solid 5px var(--red);
-  background-color: var(--red-faint);
-  color: white;
+  border-left: solid 5px var(--green);
+  background-color: var(--green-faint);
 }
 
 .tip {
   border-left: solid 5px var(--pink);
   background-color: var(--pink-faint);
-  color: white;
 }
 
 .your-turn {
-  border-left: solid 5px var(--red-faint);
-  color: gray;
+  border-left: solid 5px var(--light-blue);
 }
 
 
@@ -242,18 +228,17 @@ img, video, iframe {
 }
 
 /* Logo */
-/* .remark-slide-content:after {
+.remark-slide-content:after {
     content: "";
     position: absolute;
     bottom: 5px;
-    right: 1150px;
-    height: 30px;
-    width: 40px;
+    right: 1100px;
+    height: 60px;
+    width: 81px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("dsbox-hex.png");
+    background-image: url("logo-hex.png");
 }
-/* 
 
 /* Media */
 @page { margin: 0; }
@@ -271,33 +256,3 @@ img, video, iframe {
 div.datatables {
     color: #fff;
 }
-
-
-.inverse h1{
-  color: #D0313C;
-}
-
-.inverse a, a > code {
-  color: #0645AD;
-}
-
-.inverse h2, .inverse h3 {
-  color: #D0313C;
-  line-height: 1.1em;
-}
-
-
-/*.remark-slide-content {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-/*
-
-/* Table /*
- /* Change the background color to white for shaded rows (even rows) */
-
-    .remark-slide thead, .remark-slide tr:nth-child(2n) {
-        background-color: white;
-    }
